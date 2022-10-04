@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "nunito";
+    src: url(../assets/fonts/Nunito-Regular.ttf);
+}
+
 body{
     background-color: rgb(20, 20, 20);
     margin: 0px;
@@ -6,19 +11,148 @@ body{
     width: 100%;
     height: 100%;
     max-width: 1920px;
+    font-family: 'nunito', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container{
     display: flex;
 }
 
-.nav{
+.header{
+    display: flex;
+    flex-direction: column;
     width: 300px;
-    height: 100%;
-    background-color: rgb(42, 42, 42);
+    min-height: 100vh;
+    background-color: rgb(28, 28, 28);
     padding: 10px;
+    align-items: center;
+    justify-content: center;
+    font-variant: small-caps;
+    text-align: center;
 }
 
-.main{
-    width: 80%;
+.header__imgcont{
+    width: 120px;
 }
+
+.header__img{
+    width: 100%;
+    border-radius: 50%;
+    border: 8px solid orange;
+}
+
+.header__title{
+    margin-bottom: 4px;
+}
+
+/*  Menu  */
+
+.nav__ul{
+    padding: 0px;
+
+}
+
+.nav__li{
+    list-style-type: none;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+    width: 250px;
+    transition: 0.5s;
+}
+
+.nav__li:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: orange;
+    
+}
+
+.nav__link{
+    text-decoration: none;
+    color: white;
+
+}
+
+
+
+/*   MAIN  */
+
+.main{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;
+    width: 80%;
+    margin-left: 70px;
+}
+
+.main__title{
+    font-size: 2.6rem;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.main__title--h2{
+    font-size: 1.8rem;
+    margin: 0px;
+}
+
+.main__title--h2yellow{
+    color: #FED70E;
+}
+
+.main__text--p{
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.main__contbutton{
+    background-color: rgb(50, 50, 50);
+    width: 110px;
+    padding: 10px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.main__contbutton:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: #FED70E;
+    color: rgb(50, 50, 50);
+}
+
+.main__link{
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    width: 110px;
+}
+
+.fa-user{
+    color: #FED70E;
+}
+
+.main__link:hover{
+    color: rgb(50, 50, 50);
+}
+
+.main__link:hover>.fa-user{
+    color: rgb(50, 50, 50);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
